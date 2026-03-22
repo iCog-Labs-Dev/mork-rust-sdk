@@ -12,3 +12,13 @@ categories = ["api-bindings"]
 
 
 [dependencies]
+# 1. HTTP Client
+reqwest = { version = "0.11", features = ["json", "blocking"] } 
+
+# 2. Serialization/Deserialization
+serde = { version = "1.0", features = ["derive"] }
+
+# 3. URL Encoding
+urlencoding = "2.1"
+
+rocket = "0.5.1" # Using a recent stable version
